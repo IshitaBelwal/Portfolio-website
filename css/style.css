@@ -1,0 +1,210 @@
+@import 'utilities.css';
+:root{
+    --primary:#004AAD;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#615d5d;
+    --light:#d5d4e2;
+    --coll:#ca786d;
+    --secondary: #f4cfc6;
+
+
+}
+body{
+    font-family:'Poppins', sans-serif;
+}
+*{
+    pading: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+}
+header{
+    background: var(--coll);
+    clip-path: polygon(0 0, 100% 0, 100% 100%,65% 87%, 0 100%);
+}
+.container{
+    max-width:1152px;
+    padding:0 15px;
+    margin:0 auto;
+}
+
+header nav .left a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition:all .3s ease;
+    -o-transition: all .3s ease;
+}
+header nav .left a:hover{
+    color:var(--primary);
+header nav{
+    padding: 2rem 0;
+}
+}
+header nav .branding{
+    margin-right:3rem;
+}
+.hero{
+    padding: 3rem 0;
+}
+.hero .left img{
+    margin-block-start: 3rem;
+    width: 400px;
+    margin-block-end: 4rem;
+    
+}
+.hero .right{
+    color: var(--pure);
+    margin-inline-start: 3rem;
+}
+.hero .right h1{
+    font-size: 4rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.hero .right h4{
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right h4 span{
+    color: var(--primary);
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.hero right{
+    margin-top:-3rem;
+}
+section{
+    padding: 6rem 0;
+}
+
+section.about .about-me-img{
+    height: 450px;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin-inline-start: 2rem;
+}
+section.about h1 span{
+    color: var(--primary);
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+    margin-inline-start: 2rem;
+}
+section.about p{
+    font-family:'Lato', sans-serif ;
+    color: var(--ternary);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    margin-inline-start: 2rem;
+}
+section.about .social{
+    display: flex;
+    margin-inline-start: 2rem;
+}
+section.about .social a{
+    background: var(--coll);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+section.about .social a:hover{
+    background: var(--primary);
+}
+section.about .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5%;
+}
+.section-heading{
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 3rem;
+    line-height: 0.5;
+    font-size: 2rem;
+}
+.resume{
+    background-color: var(--secondary);
+}
+section.resume .blocks-creator{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: [row1-start] 25px [row1-end row2-start] 25px [row2-end] [row3-start] 25px [row3-end row4-start] 25px [row4-end];
+    grid-row-gap: 2rem;
+}
+section.resume .blocks-creator .blocks{
+    background: var(--pure);
+    padding: 3rem 2rem;
+}
+section.resume .blocks-creator .blocks h2{
+    text-align: center;
+    font-weight: 50;
+    margin-bottom: 2rem;
+    font-family:'Lato', sans-serif ;
+}
+section.resume .blocks-creator .blocks h4{
+    color: var(--primary);
+}
+section.resume .blocks-creator .blocks p1{
+    font-family:'Lato', sans-serif ;
+}
+section.resume .blocks-creator .blocks p2{
+    font-family:'Lato', sans-serif ;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+section.project1{
+    text-align: center;
+    background: var(--coll);
+    clip-path: polygon(0 0, 100% 0, 100% 50%,50% 100%, 0 50%);
+}
+section.project1 h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+section.project1 p{
+    margin-bottom: 1rem;
+    font-family: 'Lato',sans-serif;
+}
+.project2{
+    background-color: var(--pure);
+}
+section.project2 .blocks-creator{
+    display: grid;
+    grid-template-rows: [row1-start] 25px [row1-end row2-start] 25px [row2-end] [row3-start] 25px [row3-end row4-start] 25px [row4-end];
+    grid-row-gap: 2rem;
+}
+section.project2 .blocks-creator .blocks{
+    background: var(--secondary);
+    padding: 3rem 2rem;
+}
+section.project2 .blocks-creator .blocks h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family:'Lato', sans-serif ;
+    color: var(--primary);
+}
+section.project2 .blocks-creator .blocks p1{
+    font-family:'Lato', sans-serif ;
+    color: var(--ternary);
+    line-height: 1.6;
+}
