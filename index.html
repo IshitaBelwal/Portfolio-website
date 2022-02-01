@@ -13,21 +13,39 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="./css/style.css">
+<script src="../js/app.js"></script>
+
+
 </head>
 <body>
+    <div class="site-main-wrapper">
+        <button class="hamberger">
+            <img src="./images/hamberger.svg" alt="">
+        </button>
+
+        <div class="mobile-nav">
+            <button class="times"><img src="./images/times.svg"> </button>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#resume">RESUME</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#blog">BLOG</a></li>
+            </ul>
+        </div>
      <header>
          <div class="container">
-         <nav class="flex items-center justify-between">
+         <nav id="main-nav" class="flex items-center justify-between">
              <div class="left flex items-center">
                  <div class="branding">
                      <img src="./images/logo.png">
                  </div>
                  <div>
                      <b><a href="#">HOME</a></b>
-                     <b><a href="#">ABOUT ME</a></b>
-                     <b><a href="#">RESUME</a></b>
-                     <b><a href="#">PROJECTS</a></b>
-                     <b><a href="#">BLOG</a></b>
+                     <b><a href="#about">ABOUT ME</a></b>
+                     <b><a href="#resume">RESUME</a></b>
+                     <b><a href="#projects">PROJECTS</a></b>
+                     <b><a href="#blog">BLOG</a></b>
                  </div>
              </div>
              <div class="right">
@@ -52,7 +70,7 @@
          </div>
      </header>
 
-     <section class="about">
+     <section id="about" class="about">
          <div class="container flex">
              <div class="flex-1">
                  <img class="about-me-img" src="./images/ishita2.png" alt="">
@@ -70,10 +88,12 @@
                 </div>
          </div>
      </section>
-     <section class="resume">
+     <section id="resume" class="resume">
          <div class="container">
              <h1 class="section-heading">RESUME</h1>
-             <button class="btn btn-primary">DOWNLOAD RESUME</button>
+             <div class="btn-wrap">
+                <button class="btn btn-primary">DOWNLOAD RESUME</button>
+             </div>
              <div class="blocks-creator">
                 <div class="blocks">
                     <h2>EDUCATION</h2>
@@ -100,9 +120,12 @@
                     <p2>A/B testing, ETL, Data science pipeline (cleansing, wrangling,visualization,  modeling, interpretation), Statistics, Time series, Experimental design, Hypothesis testing, OOP, OOD, APIs, Excel,Git </p2>
                 </div>
              </div>
+             <div class="btn-wrap">
+                <button class="btn btn-primary">DOWNLOAD RESUME</button>
+             </div>
          </div>
      </section>
-     <section class="project1" style="background-image: url(../images/project.jpg);">
+     <section id="projects" class="project1" style="background-image: url(../images/project.jpg);">
          <h1>
              PROJECTS
          </h1>
@@ -112,20 +135,67 @@
         <div class="container">
                <div class="blocks-creator">
                <div class="blocks">
-                   <h2>EDUCATION</h2>
+                   <h2>Project-1</h2>
                </div>
                <div class="blocks">
-                   <h2>PROJECTS</h2>
+                   <h2>Project-2</h2>
                    <p1>HTML and CSS </p1>
                </div>
                <div class="blocks">
-                   <h2>ACHIEVEMENT</h2>
+                   <h2>Project-3</h2>
                </div>
                <div class="blocks">
-                   <h2>PROFESSIONAL SKILLSET</h2>
+                   <h2>Project-4</h2>
                </div>
             </div>
         </div>
      </section>
+     <section class="contact">
+         <div class="container">
+             <h1>CONTACT <span>US</span></h1>
+         </div>
+         <div class="blocks-creator">
+             <div class="blocks">
+                 <img src="./images/phone.svg">
+                 <h2>Call Us On</h2>             
+                 <h6>+91 8630903471</h6>
+             </div>
+         </div>
+         <div class="blocks-creator">
+            <div class="blocks">
+                <img src="./images/mail.png">
+                <h2>Email Us At</h2>             
+                <h6>ishita.belwal@gmail.com</h6>
+            </div>
+
+            <form action="">
+                <div class="input-wrap">
+                    <input type="text" placeholder="First Name *">
+                    <input type="text" placeholder="Last Name *">
+                </div>
+            </div>
+            <div class="input-wrap-2">
+                <input type="email" placeholder="Email *">
+                <input type="text" placeholder="Subject *">
+                <textarea id="" name="" rows="10" cols="50" placeholder="Your Message..."></textarea>
+            </div>
+            <div class="btn-wrapper"> 
+                <button class="btn btn-primary">SEND MESSAGE</button>
+            </div>
+            </form>
+     </section>
+     <footer>
+         <img class="footer-logo" src="./images/logo.png" alt="">
+         <div class="footer-socials">
+            <a href="#"><img src="./images/linkedin.png" alt=""></a>
+            <a href="#"><img src="./images/github.svg" alt=""></a>
+            <a href="#"><img src="./images/email.png" alt=""></a>
+         </div>
+         <div class="copyright">
+             Copyright 2022 © Ishita Belwal, All rights reserved.
+         </div>
+     </footer>
+    </div>
+    <script src="../js/app.js"></script>
 </body>
 </html>

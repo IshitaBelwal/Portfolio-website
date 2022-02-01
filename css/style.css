@@ -13,6 +13,9 @@
 body{
     font-family:'Poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 *{
     pading: 0;
     margin: 0;
@@ -28,6 +31,28 @@ header{
     padding:0 15px;
     margin:0 auto;
 }
+
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media (min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+
 
 header nav .left a{
     color:var(--pure);
@@ -87,6 +112,7 @@ section{
     padding: 6rem 0;
 }
 
+
 section.about .about-me-img{
     height: 450px;
 }
@@ -142,8 +168,13 @@ section.about .social a img{
     line-height: 0.5;
     font-size: 2rem;
 }
+
+
 .resume{
     background-color: var(--secondary);
+}
+section.resume .btn-wrap{
+    text-align: center;
 }
 section.resume .blocks-creator{
     margin-top: 2rem;
@@ -172,6 +203,8 @@ section.resume .blocks-creator .blocks p2{
     color: var(--ternary);
     line-height: 1.6;
 }
+
+
 section.project1{
     text-align: center;
     background: var(--coll);
@@ -185,6 +218,8 @@ section.project1 p{
     margin-bottom: 1rem;
     font-family: 'Lato',sans-serif;
 }
+
+
 .project2{
     background-color: var(--pure);
 }
@@ -207,4 +242,170 @@ section.project2 .blocks-creator .blocks p1{
     font-family:'Lato', sans-serif ;
     color: var(--ternary);
     line-height: 1.6;
+}
+
+
+section.contact h1{
+    text-align: center;
+    font-size: 2rem;
+}
+section.contact h1 span{
+    color: var(--primary);
+}
+section.contact .blocks-creator{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+}
+section.contact .blocks-creator .blocks{
+    text-align: center;
+}
+section.contact .blocks-creator .blocks img{
+    margin-bottom: 2rem;
+}
+section.contact .blocks-creator .blocks h2{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+section.contact .blocks-creator .blocks h6{
+    font-size: 1rem;
+    color: var(--ternary);
+}
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+section.contact .input-wrap-2{
+    margin-bottom: 2rem;
+}
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+section.contact input{
+    padding: 1rem;
+    border: 1px solid var(--light);
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+section.contact input:focus{
+    outline: none;
+}
+section.contact .input-wrap-2 textarea{
+    padding: 1rem;
+    border: 1px solid var(--light);
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+section.contact .input-wrap-2 textarea:focus{
+    outline: none;
+}
+section.contact .btn-wrapper{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+footer{
+    background: var(--coll);
+    text-align: center;
+    padding: 5rem 0;
+}
+footer .footer-logo{
+    margin-bottom: 1rem;
+    width: 300px;
+}
+footer .footer-socials{
+    margin-inline-start: 2rem;
+    display: flex-1;
+}
+footer .footer-socials a{
+    margin-right: 0.7rem;
+    background: var(--coll);
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+footer .footer-socials{
+    margin-bottom: 3rem;
+}
+footer .footer-socials a:hover{
+    background: var(--primary);
+}
+footer .copyright{
+    color: wheat;
+}
+
+
+.site-main-wrapper{
+    position: relative;
+}
+.hamberger{
+    position: absolute;
+    top:40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.hamberger img{
+    width: 30px;
+}
+.mobile-nav{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1001;
+    background: wheat;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+}
+.open{
+    transform: translateX(0);
+}
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.times img{
+    width: 30px;
+}
+.mobile-nav ul{
+    list-style-type: none;
+}
+.mobile-nav ul li a{
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+@media (max-width:1024px){
+    header #main-nav{
+        display: none;
+    }
+    .hero .left img{
+        width: 260px;
+    }
+    .hero .right h1{
+        font-size: 3rem ;
+    }
+    .hero{
+        padding-top: 5rem;
+    }
 }
